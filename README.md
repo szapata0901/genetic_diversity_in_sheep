@@ -14,7 +14,13 @@ I built it for breeding decisions: which animals carry the most useful variation
 
 ## What you get
 
-Tables per animal and per pair, plus plots: distributions of heterozygosity and F_ROH, ROH patterns along the chromosomes, relationship heatmaps and rankings. The idea is that a breeder can read the output and make a decision, without needing to be a geneticist.
+Three main tables, plus plots (distributions of heterozygosity and F_ROH, ROH patterns along the chromosomes, relationship heatmaps and rankings). The idea is that a breeder can read the output and make a decision, without needing to be a geneticist.
+
+| File | What it is |
+|---|---|
+| `animal_genetic_profile.csv` | One row per animal. Its genetic profile: heterozygosity, inbreeding from ROH (F_ROH) and its position in the ranking. Use it to see which animals carry the most useful variation and which are the most inbred. |
+| `all_genetic_pairs.csv` | One row per pair of animals. How genetically related and compatible each pair is. It is the full picture, so it can be large. |
+| `candidate_matings.csv` | A shortlist of suggested matings drawn from the pairs above, favoring combinations that keep inbreeding low. This is the file to open when planning matings. |
 
 ## Running it
 
